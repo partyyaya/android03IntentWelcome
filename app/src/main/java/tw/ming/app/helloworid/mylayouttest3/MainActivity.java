@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        Log.i("ming", "onStop");
     }
+
 
     @Override
     protected void onDestroy() {
