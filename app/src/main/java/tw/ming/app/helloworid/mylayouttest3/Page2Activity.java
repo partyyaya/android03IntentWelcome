@@ -6,13 +6,20 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import static tw.ming.app.helloworid.mylayouttest3.MainApp.data4;
+
 public class Page2Activity extends AppCompatActivity {
     private long lastKeyTime;
+    private MainApp mainApp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
         lastKeyTime = System.currentTimeMillis();
+        mainApp=(MainApp) getApplication();
+        Log.i("ming","MainApp:username = "+mainApp.username);
+        Log.i("ming","MainApp:data3 = "+mainApp.data3);
+        Log.i("ming","MainApp:data4= "+data4);
     }
     public void doExit(View view){
         finish();
